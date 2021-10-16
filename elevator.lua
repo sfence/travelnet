@@ -87,7 +87,7 @@ travelnet.show_nearest_elevator = function( pos, owner_name, param2 )
 end
 
 
-minetest.register_node("travelnet:elevator", {
+minetest.register_node(":travelnet:elevator", {
 	description = S("Elevator"),
 	drawtype = "mesh",
 	mesh = "travelnet_elevator.obj",

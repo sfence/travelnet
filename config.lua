@@ -20,14 +20,14 @@ travelnet.abm_enabled              = false;
 
 -- change these if you want other receipes for travelnet or elevator
 travelnet.travelnet_recipe = {
-                {"default:glass", "default:steel_ingot", "default:glass", },
-                {"default:glass", "default:mese",        "default:glass", },
-                {"default:glass", "default:steel_ingot", "default:glass", }
+                {"hades_core:glass", "hades_core:steel_ingot", "hades_core:glass", },
+                {"hades_core:glass", "hades_materials:teleporter_device",        "hades_core:glass", },
+                {"hades_core:glass", "hades_core:steel_ingot", "hades_core:glass", }
 }
 travelnet.elevator_recipe = {
-	        {"default:steel_ingot", "default:glass", "default:steel_ingot", },
-		{"default:steel_ingot", "",              "default:steel_ingot", },
-		{"default:steel_ingot", "default:glass", "default:steel_ingot", }
+	        {"hades_core:steel_ingot", "hades_core:glass", "hades_core:steel_ingot", },
+		{"hades_core:steel_ingot", "",              "hades_core:steel_ingot", },
+		{"hades_core:steel_ingot", "hades_core:glass", "hades_core:steel_ingot", }
 }
 travelnet.tiles_travelnet = {
 		"travelnet_travelnet_front.png",  -- backward view

@@ -5,7 +5,7 @@
 -- Author: Sokomine
 local S = travelnet.S;
 
-minetest.register_node("travelnet:travelnet", {
+minetest.register_node(":travelnet:travelnet", {
 
 	description = S("Travelnet-Box"),
 

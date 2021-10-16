@@ -6,7 +6,7 @@ local S = travelnet.S;
 
 travelnet.register_door = function( node_base_name, def_tiles, material )
 
-	minetest.register_node( node_base_name.."_open", {
+	minetest.register_node( ":"..node_base_name.."_open", {
 		description = S("elevator door (open)"),
 		drawtype = "nodebox",
                 -- top, bottom, side1, side2, inner, outer
@@ -36,7 +36,7 @@ travelnet.register_door = function( node_base_name, def_tiles, material )
                 end,
 	})
 
-	minetest.register_node(node_base_name.."_closed", {
+	minetest.register_node(":"..node_base_name.."_closed", {
 		description = S("elevator door (closed)"),
 		drawtype = "nodebox",
                 -- top, bottom, side1, side2, inner, outer
@@ -93,8 +93,8 @@ end
 
 -- actually register the doors
 -- (but only if the materials for them exist)
-if( minetest.registered_nodes["default:glass"]) then
-   travelnet.register_door( "travelnet:elevator_door_steel", {"default_stone.png"}, "default:steel_ingot");
-   travelnet.register_door( "travelnet:elevator_door_glass", {"travelnet_elevator_door_glass.png"}, "default:glass");
-   travelnet.register_door( "travelnet:elevator_door_tin", {"default_clay.png"}, "default:tin_ingot");
+if( minetest.registered_nodes["hades_core:glass"]) then
+   travelnet.register_door( "travelnet:elevator_door_steel", {"default_stone.png"}, "hades_core:steel_ingot");
+   travelnet.register_door( "travelnet:elevator_door_glass", {"travelnet_elevator_door_glass.png"}, "hades_core:glass");
+   travelnet.register_door( "travelnet:elevator_door_tin", {"default_clay.png"}, "hades_core:tin_ingot");
 end
